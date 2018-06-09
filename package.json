@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true ./node_modules/.bin/cross-env react-scripts test --env=jsdom --noStackTrace || true",
+    "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
     "test:module1": "CI=true ./node_modules/.bin/cross-env react-scripts test --env=jsdom --noStackTrace src/__tests__/module1 || true",
     "test:module2": "CI=true ./node_modules/.bin/cross-env react-scripts test --env=jsdom --noStackTrace src/__tests__/module2 || true",
     "test:module3": "CI=true ./node_modules/.bin/cross-env react-scripts test --env=jsdom --noStackTrace src/__tests__/module3 || true",
